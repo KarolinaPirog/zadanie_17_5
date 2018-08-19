@@ -21,6 +21,13 @@ app.get('/first-template', function(req, res){
     res.render('first-template');
 });
 
+app.get('/auth/google', function(req, res){
+    res.render('google');
+});
+
+app.get('/auth/logged', function(req, res){
+    res.render('logged');
+});
 
 app.listen(3000);
 app.use(function (req, res, next) {
